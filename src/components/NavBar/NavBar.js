@@ -1,17 +1,20 @@
-import { Link } from "react-router-dom";
+import { Link, /* NavLink */ } from "react-router-dom";
 import CartWidget from "../CartWidget/CartWidget";
+import './NavBar.css';
 
 
 
 const NavBar = () => {
     return (
-        <nav className="navbar">
-            <Link to="/"><h2>SnowSport</h2></Link>
+        <nav className="navbar ">
+            <Link to="/">
+                <button className="btn btn-lg  fs-2 fw-bold fst-italic">SnowSport</button>
+            </Link>
             <div className="btn-group">
-                <Link to="/tablas"><button className="btn btn-secondary" >Tablas</button></Link>
-                <Link to="/botas"><button type="button" className="btn btn-primary">Botas</button></Link>
-                <Link to="/fijaciones"><button>Fijaciones</button></Link>
-                <Link to="/goggles"><button>Goggles</button></Link>
+                <Link to="/category/tabla"><button className="btn fw-semibold fs-4" >Tablas</button></Link>
+                <Link to="/category/bota"><button className="btn fw-semibold fs-4">Botas</button></Link>
+                <Link to="/category/fijacion"><button className="btn fw-semibold fs-4">Fijaciones</button></Link>
+                <Link to="/category/goggle"><button className="btn fw-semibold fs-4">Goggles</button></Link>
             </div>
             <CartWidget/>
         </nav>

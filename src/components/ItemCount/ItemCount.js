@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const ItemCount = ({ stock, initial, onAdd }) => {
-    const [quantity, setQuantity] = useState(1)
+    const [quantity, setQuantity] = useState(1);
 
     const increment = () => {
         if (quantity < stock) {
@@ -17,14 +17,14 @@ const ItemCount = ({ stock, initial, onAdd }) => {
     
 
     return (
-        <div className=" ">
-            <div className="btn-group">
-                <button className="btn btn-danger" onClick={decrement}>-</button>
-                <h4 className="btn">{quantity}</h4>
-                <button className="btn btn-success" onClick={increment}>+</button>
+        <div className="d-flex flex-column aline-items-center">
+            <div className="btn-group mb-3 ">
+                <button className="btn btn-danger fs-4 fw-bold" onClick={decrement}>-</button>
+                <h4 className="btn fs-4 fw-bold">{quantity}</h4>
+                <button className="btn btn-success fs-4 fw-bold" onClick={increment}>+</button>
             </div>
             <div>
-                <button className="btn btn-primary" onClick={() => onAdd(quantity)} disabled={!stock} >
+                <button className="btn btn-primary fs-5 fw-bold mb-4" onClick={() => onAdd(quantity)} disabled={!stock} >
                     Agregar al carrito
                 </button>
             </div>

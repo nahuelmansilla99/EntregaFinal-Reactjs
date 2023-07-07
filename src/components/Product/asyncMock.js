@@ -1,87 +1,154 @@
+import tabla01 from './Imagenes/tabla01.jpg';
+import tabla02 from './Imagenes/tabla02.jpg';
+import tabla03 from './Imagenes/tabla03.jpg';
+import bota01 from './Imagenes/bota01.jpg';
+import bota02 from './Imagenes/bota02.jpg';
+import bota03 from './Imagenes/bota03.jpg';
+import fijacion01 from './Imagenes/fijacion01.jpg';
+import fijacion02 from './Imagenes/fijacion02.jpg';
+import fijacion03 from './Imagenes/fijacion03.jpg';
+import goggle01 from './Imagenes/goggles01.jpg';
+import goggle02 from './Imagenes/goggles02.jpg';
+import goggle03 from './Imagenes/goggles03.jpg';
 
 
 const Products = [
     {
-    id: 'tabla01',
-    name: 'Board SUPER',
-    stock: 5,
-    price: 100,
-    Image:['./Imagenes/tabla01.jpg'],
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-},
+        id: 'tabla01',
+        name: 'Tabla SUPER',
+        stock: 5,
+        price: 100,
+        image:[tabla01],
+        category: 'tabla',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+    },
     {
     id: 'tabla02',
-    name: 'Board MEGA',
+    name: 'Tabla MEGA',
     stock: 5,
     price: 200,
-    Image:['./Imagenes/tabla02.jpg'],
-    desctiption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-},
+    image:[tabla02],
+    category: 'tabla',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+    },
     {
     id: 'tabla03',
-    name: 'Board ULTRA',
+    name: 'Tabla ULTRA',
     stock: 5,
     price: 300,
-    Image:['./Imagenes/tabla03.jpg'],
-    desctiption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-},
+    image:[tabla03],
+    category: 'tabla',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+    },
     {
     id: 'bota01',
     name: 'Bota SUPER',
     stock: 5,
     price: 100,
-    Image:['./Imagenes/bota01.jpg'],
-    desctiption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-},
+    image:[bota01],
+    category: 'bota',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+    },
     {
     id: 'bota02',
     name: 'Bota MEGA',
     stock: 5,
     price: 200,
-    Image:['./Imagenes/bota02.jpg'],
-    desctiption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-},
+    image:[bota02],
+    category: 'bota',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+    },
     {
     id: 'bota03',
     name: 'Bota ULTRA',
     stock: 5,
     price: 300,
-    Image:['./Imagenes/bota03.jpg'],
-    desctiption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-},
+    image:[bota03],
+    category: 'bota',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+    },
     {
     id: 'goggle01',
     name: 'Goggle SUPER',
     stock: 5,
     price: 100,
-    Image:['./Imagenes/goggles01.jpg'],
-    desctiption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-},
+    image:[goggle01],
+    category: 'goggle',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+    },
     {
     id: 'goggle02',
     name: 'Goggle MEGA',
     stock: 5,
     price: 200,
-    Image:['./Imagenes/goggles02.jpg'],
-    desctiption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-},
+    image:[goggle02],
+    category: 'goggle',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+    },
     {
     id: 'goggle03',
     name: 'Goggle ULTRA',
     stock: 5,
     price: 300,
-    Image:['./Imagenes/goggles03.jpg'],
-    desctiption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-},
+    image:[goggle03],
+    category: 'goggle',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+    },
+    {
+    id: 'fijacion01',
+    name: 'Fijacion SUPER',
+    stock: 5,
+    price: 100,
+    image:[fijacion01],
+    category: 'fijacion',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+    },
+    {
+    id: 'fijacion02',
+    name: 'Fijacion MEGA',
+    stock: 5,
+    price: 200,
+    image:[fijacion02],
+    category: 'fijacion',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+    },
+    {
+    id: 'fijacion03',
+    name: 'Fijacion ULTRA',
+    stock: 5,
+    price: 300,
+    image:[fijacion03],
+    category: 'fijacion',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+    },
 ];
 
 export default Products;
 
 
-/* export const getProducts = () =>{
-    return new Promise((resolve) =>{
-        setTimeout(() =>{
-            resolve(Products)
-        }, 500)
+
+const DELAY = 200
+
+export const getProducts = () => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(Products)
+    }, DELAY)
+  })
+};
+
+export const getProductById = (id) => {
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        resolve(Products.find(prod => prod.id === id))
+      }, DELAY)
     })
-} */
+};
+  
+export const getProductsByCategory = (category) => {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve(Products.filter(prod => prod.category === category))
+        }, DELAY)
+    })
+};

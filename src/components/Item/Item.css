@@ -1,0 +1,7 @@
+.card{
+    display: flex;
+    align-items: center;
+    width: 18rem;
+    max-width: 75ch;
+}
+
