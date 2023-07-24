@@ -20,7 +20,7 @@ const ItemCount = ({ stock, initial, onAdd }) => {
         <div className="d-flex flex-column aline-items-center">
             <div className="btn-group mb-3 ">
                 <button className="btn btn-danger fs-4 fw-bold" onClick={decrement}>-</button>
-                <h4 className="btn fs-4 fw-bold">{quantity}</h4>
+                <h4 className="btn fs-4 fw-bold m-0 ">{quantity}</h4>
                 <button className="btn btn-success fs-4 fw-bold" onClick={increment}>+</button>
             </div>
             <div>

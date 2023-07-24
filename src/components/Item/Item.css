@@ -5,3 +5,24 @@
     max-width: 75ch;
 }
 
+article{
+    transition: .3s ease-in-out;
+}
+
+article:hover{
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+picture {
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+picture img {
+    width: 100%;
+    transition: .5s all ease-in-out;
+}
+
+picture:hover img {
+    transform: scale(1.2);
+}

@@ -1,3 +1,17 @@
 .fondo{
     background-color: #f6f6f6;
 }
+.geeks {
+
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.geeks img {
+    width: 100%;
+    transition: 0.5s all ease-in-out;
+}
+
+.geeks:hover img {
+    transform: scale(1.2);
+}

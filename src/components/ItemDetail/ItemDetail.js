@@ -6,7 +6,7 @@ const ItemDetail = ({ id, name, image, description, price, stock }) => {
         
         <div className="fondo container d-flex justify-content-center bg-color">
             <div className="d-flex" >
-                <div>
+                <div className="geeks">
                     <img width={550} src={image} alt={name} />
                 </div>
                 <div className="d-flex flex-column flex-direction-column justify-content-center align-items-center m-5">
