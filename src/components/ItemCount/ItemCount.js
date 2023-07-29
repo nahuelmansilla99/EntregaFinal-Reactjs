@@ -1,6 +1,9 @@
-import { useState } from "react";
+import { /* useContext, */ useState } from "react";
+// import { CartContext } from "../CartContext/CartContext";
 
-const ItemCount = ({ stock, initial, onAdd }) => {
+
+
+const ItemCount = ({ stock, onAdd }) => {
     const [quantity, setQuantity] = useState(1);
 
     const increment = () => {
@@ -16,7 +19,7 @@ const ItemCount = ({ stock, initial, onAdd }) => {
     }
     
 
-    return (
+    return (        
         <div className="d-flex flex-column aline-items-center">
             <div className="btn-group mb-3 ">
                 <button className="btn btn-danger fs-4 fw-bold" onClick={decrement}>-</button>
@@ -28,8 +31,9 @@ const ItemCount = ({ stock, initial, onAdd }) => {
                     Agregar al carrito
                 </button>
             </div>
-        </div>
+        </div> 
     )
+    
 };
 
 export default ItemCount;

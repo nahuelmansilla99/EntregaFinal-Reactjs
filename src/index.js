@@ -4,7 +4,7 @@ import App from "./App";
 // import * as bootstrap from 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
-
+import "./config/firebase";
 
 
 const el = document.getElementById("root");

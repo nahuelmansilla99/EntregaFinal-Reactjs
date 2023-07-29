@@ -3,27 +3,30 @@ import "./CartWidget.css";
 import { useContext } from "react";
 import { CartContext } from "../CartContext/CartContext";
 import {Link} from 'react-router-dom';
+import React from "react";
+// import ItemCount from "../ItemCount/ItemCount";
+
+// export default CartWidget;
+
+
 
 const CartWidget = () => {
-    const { totalQuantity} = useContext(CartContext);
 
+    const { cart } = useContext(CartContext);
+
+    const totalQuantity = cart.reduce((acc, item) => acc + item.quantity, 0);
+
+    // const { ItemCount } = useContext(CartContext)
     return (
         <Link to='/cart' className="imagenContadorDiv d-flex align-items-center">
             <img src={cartImg} className="imagenContador " alt='cart-widget'/>
-            <p>{totalQuantity}</p>
-            {/* {totalQuantity} */}
+            <p className="">
+                {totalQuantity}
+            </p>
         </Link>
     )
-    // return (
-    //     <div className="imagenContadorDiv d-flex align-items-center">
-    //         <img className="imagenContador" src={cartImg} alt="cart-widget" />
-    //         <p>0</p>
-    //     </div>
-        
-    // )
-
-    
-};
+}
 
 
+  
 export default CartWidget;
