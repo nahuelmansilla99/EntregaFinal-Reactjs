@@ -2,12 +2,12 @@ import React, { createContext, useState, useContext } from "react";
 
 // import { createContext, useState } from "react";
 
-export const useCartContext = () => { return useContext(CartContext) };
+export const useCartContext = () => useContext(CartContext) ;
 
 export const CartContext = createContext({
-    cart: [],
-    total: 0,
-    totalQuantity: 0
+    // cart: [],
+    // total: 0,
+    // totalQuantity: 0
 })
 
 export const CartProvider = ({ children }) => {
@@ -33,6 +33,8 @@ export const CartProvider = ({ children }) => {
     const isInCart = (itemId) => {
         return cart.some(prod => prod.id === itemId)
     };
+
+
 
     const total = cart.reduce((total, item) => total + item.price * item.quantity, 0)
 

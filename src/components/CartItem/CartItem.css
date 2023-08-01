@@ -1,0 +1,16 @@
+.fila{
+    transition: .3s ease-in-out;
+}
+
+.fila:hover{
+    box-shadow: 0 .3rem .5rem rgba(0,0,0,.15);
+    cursor:default;
+}
+
+.fila p{
+    transition: .3s ease-in-out;
+}
+
+.fila p:hover{
+    text-decoration: underline;
+}

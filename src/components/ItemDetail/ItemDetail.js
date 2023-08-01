@@ -1,19 +1,25 @@
 import ItemCount from "../ItemCount/ItemCount";
 import './ItemDetail.css';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 
-// import { CartContext } from "../CartContext/CartContext";
+import { CartContext } from "../CartContext/CartContext";
 
-const ItemDetail = ({ id, name, image, description, price, stock }) => {
+const ItemDetail = ({ id, name, image, description, price, stock}) => {
 
     const [quantityAdded, setQuantityAdded] = useState(0);
 
-    const handleOnAdd = (quantity) => {
+    const {addItem} = useContext(CartContext);
+    const handleOnAdd= (quantity) => {
         setQuantityAdded(quantity)
-       
+
+        const item = {
+            id, name, price 
+        }
+        addItem(item, quantity)
     }
 
+    
     return (
         
         <div className="fondo container d-flex justify-content-center bg-color">
@@ -25,7 +31,7 @@ const ItemDetail = ({ id, name, image, description, price, stock }) => {
                     <h3 className="fs-1 fw-bold">{name}</h3>
                     <p className="fs-4 fw-medium">Precio: ${price}</p>
                     <p className="mb-3">{description}</p>
-                    {/* <ItemCount initial={1} stock={stock} onAdd={(quantity) => console.log('Cantidad agregada ', quantity)} /> */}
+
                     <footer className='d-flex justify-content-center'>
                         {
                             quantityAdded > 0 ? (
@@ -33,7 +39,6 @@ const ItemDetail = ({ id, name, image, description, price, stock }) => {
                             ) : (
                                 <ItemCount initial={1} stock={stock} onAdd={handleOnAdd}/>
                             )
-
                         }
                     </footer>
                 </div>
