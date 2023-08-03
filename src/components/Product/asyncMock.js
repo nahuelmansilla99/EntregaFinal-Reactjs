@@ -18,13 +18,13 @@ import goggle04 from './Imagenes/goggles04.jpg';
 
 const Products = [
     {
-        id: 'tabla01',
-        name: 'Tabla SUPER',
-        stock: 5,
-        price: 100,
-        image:[tabla01],
-        category: 'tabla',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+    id: 'tabla01',
+    name: 'Tabla SUPER',
+    stock: 5,
+    price: 100,
+    image:[tabla01],
+    category: 'tabla',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
     },
     {
     id: 'tabla02',

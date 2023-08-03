@@ -3,6 +3,7 @@
     align-items: center;
     width: 18rem;
     max-width: 75ch;
+    cursor:default;
 }
 
 article{
@@ -13,16 +14,18 @@ article:hover{
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
 
-picture {
+.picture {
     overflow: hidden;
     margin: 0 auto;
+    background-color: #f6f6f6;
 }
 
-picture img {
+.picture img {
     width: 100%;
     transition: .5s all ease-in-out;
+    transform: scale(.9);
 }
 
-picture:hover img {
-    transform: scale(1.2);
+.picture:hover img {
+    transform: scale(1);
 }

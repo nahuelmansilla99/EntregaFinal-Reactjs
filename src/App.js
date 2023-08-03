@@ -6,13 +6,9 @@ import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailCont
 import Greeting from "./components/greeting";
 import Cart from "./components/Cart/Cart";
 import { CartProvider } from "./components/CartContext/CartContext";
+import Checkout from "./components/checkout/Checkout"
 
 
-
-// Firebase
-// import {db} from "./config/firebase";
-// import {getDocs, getDoc, collection} from "firebase/firestore";
-// import { useState, useEffect} from "react";
 
 
 function App(){
@@ -26,7 +22,7 @@ function App(){
                     <Route path="/category/:categoryId" element={<ItemListContainer/>}/>
                     <Route path="/item/:itemId" element={<ItemDetailContainer/>}/>
                     <Route path="/cart" element={<Cart/>}/>
-                    {/* <Route path="/checkout" element={<Checkout/>}/> */}
+                    <Route path="/checkout" element={<Checkout/>}/>
                     <Route path="*" element={<ItemListContainer/>}/>
                 </Routes>                
             </CartProvider>

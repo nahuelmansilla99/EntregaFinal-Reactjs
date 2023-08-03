@@ -1,7 +1,4 @@
-import { /* useContext, */ useState } from "react";
-// import { CartContext } from "../CartContext/CartContext";
-
-
+import { useState } from "react";
 
 const ItemCount = ({ stock, initial, onAdd }) => {
     const [quantity, setQuantity] = useState(initial);
@@ -18,8 +15,6 @@ const ItemCount = ({ stock, initial, onAdd }) => {
         }
     }
     
-
-
     return (        
         <div className="d-flex flex-column aline-items-center">
             <div className="btn-group mb-3 ">

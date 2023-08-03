@@ -6,9 +6,9 @@ const Item = ({id, name, image, price, stock}) => {
 
     return (
         <article className="card m-3 " >
-            <picture>
+            <Link to={`/item/${id}`} className='picture'>
                 <img id={id} src={image} alt={name} className="img-fluid rounded-top-1" />
-            </picture>
+            </Link>
             <div className='card-body'>
                 <header className="card-title ">
                     <h2>{name}</h2>
